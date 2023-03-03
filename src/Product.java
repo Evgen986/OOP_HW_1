@@ -57,7 +57,7 @@ public abstract class Product {
      * @param price цена продукта
      */
     public void setPrice(BigDecimal price) {
-        if (price.compareTo(BigDecimal.valueOf(0)) < 0) this.price = price;
+        if (price.compareTo(BigDecimal.valueOf(0)) > 0) this.price = price;
         else System.out.println("Стоимость не может быть равна или меньше нуля!");
     }
 
